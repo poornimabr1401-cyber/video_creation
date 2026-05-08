@@ -74,7 +74,7 @@ def create_video(image_files, duplicate_count, fps, audio_path):
             f.write(img_file.getbuffer())
         
         # MoviePy 2.0+ uses .with_duration() and .resized()
-        clip = ImageClip(temp_img_path).with_duration(duration_per_image)
+        clip = ImageClip(rose.jpg).with_duration(10s)
         clip = clip.resized(target_resolution) 
         clips.append(clip)
     
